@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Loan Calculator</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="errorMsg">Please check the numbers</div>
+    <h1>Loan Calculator</h1>
+    <!--  -->
+    <form class="form-group">
+      <div class="form-input">
+        <span>RM</span>
+        <input type="number" name="" id="loan-amount" class="inputs" placeholder="Loan Amount">
+      </div>
+      <div class="form-input">
+        <span>%</span>
+        <input type="number" name="" id="interest" class="inputs" placeholder="Interest">
+      </div>
+      <div >
+        <input type="number" name="" id="Years" class="inputs" placeholder="Years To Repay">
+      </div>
+      <input type="submit" value="Calculate" class="btn-calc">
+    </form>
+
+    <!-- Loading giphy -->
+    <div class="loading">
+      <img src="./image/loading.gif" alt="loading">
+    </div>
+
+    <!-- Result -->
+    <div class="result">
+      <h3>Results</h3>
+      <div class="all-result">
+        <span>Total Payment</span><span class="total-payment result-span"></span>
+      </div>
+      <div class="all-result">
+        <span>Total Interest</span><span class="total-interest result-span"></span>
+      </div>
+      <div class="all-result">
+        <span>Monthly Payment</span><span class="monthly-payment result-span"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
